@@ -25,7 +25,7 @@ self.addEventListener('fetch', function(event) {
     var req = event.request.clone();
 
     // Build the return URL
-    var returnUrl = "http://localhost/cat.png";
+    var returnUrl = "/cat.png";
 
     event.respondWith(
       fetch(returnUrl, {
