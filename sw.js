@@ -40,7 +40,7 @@ self.addEventListener('fetch', function(event) {
         if (response) {
           return response;
         }
-        return fetch(event.request);
+        return fetch(event.request).catch((err) => console.log(err);
       })
     );
   }
